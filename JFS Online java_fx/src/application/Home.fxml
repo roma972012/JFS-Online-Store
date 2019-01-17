@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: #FFFFF;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <top>
+      <Pane prefHeight="450.0" prefWidth="510.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutY="-4.0" prefHeight="456.0" prefWidth="510.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="218.0" layoutY="150.0" prefHeight="56.0" prefWidth="219.0" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="228.0" prefHeight="56.0" prefWidth="424.0" text="JFS IS ONLINE NOW" textFill="#1f4009">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="41.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnMaintain" layoutX="21.0" layoutY="404.0" mnemonicParsing="false" onAction="#maintainPage" prefHeight="26.0" prefWidth="88.0" text="Maintain" />
+                  <Label alignment="CENTER" layoutX="172.0" layoutY="262.0" prefHeight="56.0" prefWidth="266.0" text="Buy With confidence and feel the fifference" textFill="#1f4009">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="379.0" opacity="0.5" prefHeight="17.0" prefWidth="111.0" text="Admins only">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Line endX="56.0" layoutX="115.0" layoutY="290.0" startX="-106.0" />
+                  <Line endX="-48.0" endY="-1.0" layoutX="552.0" layoutY="291.0" startX="-114.0" startY="-1.0" />
+                  <ImageView fitHeight="134.0" fitWidth="196.0" layoutX="255.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@S-fisherman-.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <Button fx:id="Register" layoutX="396.0" layoutY="46.0" mnemonicParsing="false" onAction="#registerPage" prefHeight="27.0" prefWidth="90.0" text="Register" />
+            <Button fx:id="UserLogin" layoutX="246.0" layoutY="46.0" mnemonicParsing="false" onAction="#loginPage" prefHeight="26.0" prefWidth="88.0" text="User Login" textFill="#1b1919" />
+            <ImageView fitHeight="189.0" fitWidth="199.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Store%20Fish%20Shack.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="235.0" layoutY="24.0" opacity="0.5" prefHeight="17.0" prefWidth="111.0" text="Already a member ?">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="386.0" layoutY="24.0" opacity="0.5" prefHeight="17.0" prefWidth="118.0" text="Create a new Account">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
